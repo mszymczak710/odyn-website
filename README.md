@@ -6,10 +6,10 @@ https://aleks-2.mat.umk.pl/pz2022/zesp10/
 
 (wymagany włączony OpenVPN)
 
+## Repozytorium aplikacji
+https://github.com/WojciechKuz/odyn
+
 ## Autor
 Mateusz Mariusz Szymczak
 
 (mszymczak710@o2.pl)
-
-## Repozytorium aplikacji
-https://github.com/WojciechKuz/odyn

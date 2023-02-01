@@ -1,0 +1,18 @@
+Raporty
+Zmiana backgroundu
+Zmiana opisu projektu
+
+
+
+Dokumentacja techniczna
+Podręcznik użytkownika
+Link do gita
+
+
+Licencja
+
+Responsywność:
+- dla technologii
+- dla menu (sprawdzić)
+- dla harmonogramu pracy
+- meeting dialog (sprawdzić)
