@@ -1,3 +1,25 @@
+@use "@angular/material" as mat;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@include mat.core();
+
+$frontend-primary: mat.define-palette(mat.$amber-palette);
+$frontend-accent: mat.define-palette(mat.$indigo-palette, 300);
+
+$frontend-warn: mat.define-palette(mat.$red-palette);
+
+$frontend-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $frontend-primary,
+      accent: $frontend-accent,
+      warn: $frontend-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($frontend-theme);
+
 * {
   box-sizing: border-box;
 }
@@ -32,6 +54,22 @@ body {
   }
 }
 
+.shr {
+  margin: 5vh 0;
+  width: 10vw;
+  height: 1vh;
+  background-color: #fff;
+
+  @media screen and (max-width: 480px) {
+    width: 20vw;
+    margin: 2.5vh 0;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    width: 15vw;
+  }
+}
+
 .mat-mdc-snack-bar-container {
   --mat-mdc-snack-bar-button-color: #69f0ae !important;
   --mdc-snackbar-supporting-text-color: #f2f2f2 !important;
@@ -40,7 +78,6 @@ body {
     max-width: 95vw;
   }
 }
-
 
 .special-date {
   .mat-calendar-body-cell-content {
@@ -65,8 +102,9 @@ body {
 
 .mat-calendar-body-selected {
   background-color: #555 !important;
+  color: #fff;
 }
 
-.mat-calendar-body-today:not(.mat-calendar-body-selected){
- border-color:#999 !important;
+.mat-calendar-body-today:not(.mat-calendar-body-selected) {
+  border-color: #999 !important;
 }

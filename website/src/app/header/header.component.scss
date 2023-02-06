@@ -2,7 +2,7 @@
 
 .header {
   height: 100vh;
-  background-image: url("../../assets/images/background/pexels-abet-llacer-927444.jpg");
+  background-image: url("../../assets/images/background/pexels-abet-llacer-927444.png");
   background-size: cover;
   display: flex;
   flex-flow: column;
@@ -68,21 +68,19 @@
     height: 30vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 5vw;
     align-items: center;
     margin-top: 43vh;
     z-index: 1;
 
     @media screen and (max-width: 480px) {
-      gap: 25px;
       margin-top: 40vh;
-      width: 60vw;
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      gap: 35px;
       margin-top: 40vh;
-      width: 50vw;
+      row-gap: 5vh;
     }
 
     .btn {

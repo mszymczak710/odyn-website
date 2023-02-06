@@ -1,56 +1,28 @@
 <div class="semester-reports">
   <h1>Raporty semestralne</h1>
   <div class="hr"></div>
-  <mat-tab-group dynamicHeight animationDuration="1000ms" class="mat-elevation-z4 tabs" data-aos="zoom-in-up"
-  data-aos-duration="1000">
+  <mat-tab-group dynamicHeight color="accent" animationDuration="1000ms" class="mat-elevation-z4 tabs"
+    data-aos="zoom-in-up" data-aos-duration="1000">
     <mat-tab label="Semestr zimowy 2022/2023">
       <div class="reports">
-        <a (click)="alertMessage(1)" class="item-1">
-          <i class="fa fa-users"></i>Raport zespołu
-        </a>
-        <a (click)="alertMessage(1)" class="item item-2">
-          <i class="fa fa-user"></i>Raport Wojciecha
-        </a>
-        <a (click)="alertMessage(1)" class="item item-3">
-          <i class="fa fa-user"></i>Raport Mateusza
-        </a>
-        <a (click)="alertMessage(1)" class="item item-4">
-          <i class="fa fa-user"></i>Raport Damiana
-        </a>
-        <a (click)="alertMessage(1)" class="item item-5">
-          <i class="fa fa-user"></i>Raport Krzysztofa
-        </a>
-        <a (click)="alertMessage(1)" class="item item-6">
-          <i class="fa fa-user"></i>Raport Jakuba
-        </a>
-        <a (click)="alertMessage(1)" class="item item-7">
-          <i class="fa fa-user"></i>Raport Slavy
-        </a>
+        <a href="./assets/reports/winter/Raport Zespołu.pdf" target="_blank" rel="noreferrer" class="item-main"
+          matTooltip="Kliknij aby otworzyć raport" matTooltipPosition="below">
+          <i class="fa fa-users"></i>Raport zespołu </a>
+        <ng-container *ngFor="let element of winterReports, let i = index">
+          <a href="{{element.src}}" target="_blank" rel="noreferrer" class="item item-{{i}}"
+            matTooltip="Kliknij aby otworzyć raport" matTooltipPosition="below">
+            <i class="fa fa-user"></i>{{element.description}}</a>
+        </ng-container>
       </div>
     </mat-tab>
     <mat-tab label="Semestr letni 2022/2023">
       <div class="reports">
-        <a (click)="alertMessage(2)" class="item-1">
-          <i class="fa fa-users"></i>Raport zespołu
-        </a>
-        <a (click)="alertMessage(2)" class="item item-2">
-          <i class="fa fa-user"></i>Raport Wojciecha
-        </a>
-        <a (click)="alertMessage(2)" class="item item-3">
-          <i class="fa fa-user"></i>Raport Mateusza
-        </a>
-        <a (click)="alertMessage(2)" class="item item-4">
-          <i class="fa fa-user"></i>Raport Damiana
-        </a>
-        <a (click)="alertMessage(2)" class="item item-5">
-          <i class="fa fa-user"></i>Raport Krzysztofa
-        </a>
-        <a (click)="alertMessage(2)" class="item item-6">
-          <i class="fa fa-user"></i>Raport Jakuba
-        </a>
-        <a (click)="alertMessage(2)" class="item item-7">
-          <i class="fa fa-user"></i>Raport Slavy
-        </a>
+        <a (click)="alertMessage()" class="item-main">
+          <i class="fa fa-users"></i>Raport zespołu </a>
+        <ng-container *ngFor="let element of winterReports, let i = index">
+          <a (click)="alertMessage()" target="_blank" rel="noreferrer" class="item item-{{i}}">
+            <i class="fa fa-user"></i>{{element.description}}</a>
+        </ng-container>
       </div>
     </mat-tab>
   </mat-tab-group>

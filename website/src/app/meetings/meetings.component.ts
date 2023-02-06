@@ -11,8 +11,8 @@ import {
   MatCalendarCellCssClasses,
 } from '@angular/material/datepicker';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { MeetingsService } from './services/meetings.service';
-import { Meetings } from './models/meetings.model';
+import { MeetingsService } from '../services/meetings.service';
+import { Meetings } from '../models/meetings.model';
 import { MeetingsDialogComponent } from '../meetings-dialog/meetings-dialog.component';
 import { Subject, takeUntil } from 'rxjs';
 import {
@@ -118,7 +118,11 @@ export class MeetingsComponent {
     } else {
       meetingInfo.style.opacity = '0';
       for (let item of this.dataSource) {
-        if (event.getDate() === new Date(item.date).getDate()) {
+        if (
+          event.getFullYear() === new Date(item.date).getFullYear() &&
+          event.getMonth() === new Date(item.date).getMonth() &&
+          event.getDate() === new Date(item.date).getDate()
+        ) {
           this.openDialog(item);
           this.selectedDate = null;
         }

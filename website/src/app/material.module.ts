@@ -8,7 +8,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   exports: [
@@ -22,6 +23,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatTableModule,
     MatTooltipModule,
     MatTabsModule,
+    MatListModule,
   ],
 })
 export class MaterialModule {}

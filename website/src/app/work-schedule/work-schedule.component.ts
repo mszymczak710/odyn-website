@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import * as AOS from 'aos';
-import { WorkSchedule } from './models/work-schedule.model';
-import { WorkScheduleService } from './services/work-schedule.service';
+import { WorkSchedule } from '../models/work-schedule.model';
+import { WorkScheduleService } from '../services/work-schedule.service';
 
 @Component({
   selector: 'app-work-schedule',

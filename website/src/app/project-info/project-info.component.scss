@@ -36,24 +36,61 @@ h1 {
   }
 }
 
+ul {
+  color: white;
+  font-size: 26px;
+  line-height: 1.25;
+  margin: 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 21px;
+  }
+}
+
 h2 {
-  font-size: 60px;
+  font-size: 50px;
   margin-top: 15vh;
 
   @media screen and (max-width: 480px) {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 5vh;
   }
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 45px;
+    font-size: 37px;
     margin-top: 7.5vh;
   }
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Fira Sans Extra Condensed", sans-serif;
   color: white;
+}
+
+.license-text {
+  font-size: 26px;
+  z-index: 1;
+
+  a {
+    color: #bbb;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 21px;
+  }
 }
 
 p {
@@ -75,24 +112,58 @@ p {
 }
 
 .logos {
-  display: flex;
-  flex-wrap: wrap;
-  width: 60vw;
-  column-gap: 7.5vw;
-  row-gap: 5vh;
+  display: grid;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  column-gap: 7.5vw;
+  row-gap: 5vh;
+  width: 50vw;
+  grid-template-areas:
+    "ts angular android"
+    "github dc tensorflow"
+    "trello kotlin java";
 
-  .java, .ts {
-    max-width: 5vw;
+  .github {
+    grid-area: github;
   }
 
-  .android-studio, .angular {
+  .trello {
+    grid-area: trello;
+  }
+
+  .java {
+    grid-area: java;
+  }
+
+  .ts {
+    grid-area: ts;
+  }
+
+  .dc {
+    grid-area: dc;
+  }
+
+  .tensorflow {
+    grid-area: tensorflow;
+  }
+
+  .kotlin {
+    grid-area: kotlin;
+  }
+
+  .android-studio {
+    grid-area: android;
+  }
+
+  .angular {
+    grid-area: angular;
+  }
+
+  .item {
     max-width: 7.5vw;
-  }
 
-  .tensor-flow, .kotlin, .trello {
-    max-width: 10vw;
+    @media screen and (max-width: 768px) {
+      max-width: 15vw;
+    }
   }
 }

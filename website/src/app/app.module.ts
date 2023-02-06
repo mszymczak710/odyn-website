@@ -20,20 +20,23 @@ import { RouterModule } from '@angular/router';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { CdTimerModule } from 'angular-cd-timer';
 import { MaterialModule } from './material.module';
-import { MeetingsService } from './meetings/services/meetings.service';
-import { TeamService } from './team/services/team.service';
-import { WorkScheduleService } from './work-schedule/services/work-schedule.service';
+import { MeetingsService } from './services/meetings.service';
+import { TeamService } from './services/team.service';
+import { WorkScheduleService } from './services/work-schedule.service';
 import { DateAdapter } from '@angular/material/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import localePl from '@angular/common/locales/pl';
 import { FormsModule } from '@angular/forms';
 import { SemesterReportsComponent } from './semester-reports/semester-reports.component';
+import { DocumentationComponent } from './documentation/documentation.component';
+import { SemesterReportsService } from './services/semester-reports.service';
 
 registerLocaleData(localePl);
 @NgModule({
   declarations: [
     AppComponent,
     CustomHeader,
+    DocumentationComponent,
     FinishTimeComponent,
     FooterComponent,
     HeaderComponent,
@@ -57,6 +60,7 @@ registerLocaleData(localePl);
   ],
   providers: [
     MeetingsService,
+    SemesterReportsService,
     TeamService,
     WorkScheduleService,
     { provide: MatDialogRef, useValue: {} },
