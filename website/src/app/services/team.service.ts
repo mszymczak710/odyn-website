@@ -17,7 +17,7 @@ const ELEMENT_DATA: Team[] = [
     role1: 'Opiekun zespołu',
     email: 'kczark@mat.umk.pl',
     technologies: '',
-    imageSrc: './assets/images/team/icons8-customer-100.png',
+    imageSrc: './assets/images/team/opiekun.png',
     imageAlt: 'Opiekun zespołu',
   },
   {

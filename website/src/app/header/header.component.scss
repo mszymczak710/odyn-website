@@ -92,23 +92,13 @@
       height: 70px;
       font-size: 35px;
       border-radius: 50%;
-      animation: button 2500ms linear infinite alternate;
+      transition: width 0.5s ease, height 0.5s ease, font-size 0.5s ease;
 
       &:hover {
         background-color: #d61111;
-      }
-
-      @keyframes button {
-        from {
-          width: 70px;
-          height: 70px;
-          font-size: 35px;
-        }
-        to {
-          width: 90px;
-          height: 90px;
-          font-size: 45px;
-        }
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
       }
 
       @media screen and (max-width: 480px) {
@@ -116,12 +106,12 @@
         height: 50px;
         font-size: 25px;
         border-width: 3px;
-        animation: none;
+        transition: none;
       }
 
       @media screen and (min-width: 481px) and (max-width: 768px) {
         border-width: 3px;
-        animation: none;
+        transition: none;
       }
     }
   }

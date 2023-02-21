@@ -74,7 +74,19 @@ export class MeetingsComponent {
             d.getFullYear() === date.getFullYear()
         );
 
-      return highlightDate ? 'special-date' : '';
+      const meetWithCoordinator = this.dataSource
+        .filter((meet) => meet.isMeetingWithCoordinator === true)
+        .map((meet) => new Date(meet.date))
+        .some(
+          (d) =>
+            d.getDate() === date.getDate() &&
+            d.getMonth() === date.getMonth() &&
+            d.getFullYear() === date.getFullYear()
+        );
+
+      if (meetWithCoordinator) return 'coordinator-date';
+      else if (highlightDate) return 'meet-date';
+      else return '';
     };
   }
 

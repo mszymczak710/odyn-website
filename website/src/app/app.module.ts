@@ -30,6 +30,7 @@ import { FormsModule } from '@angular/forms';
 import { SemesterReportsComponent } from './semester-reports/semester-reports.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { SemesterReportsService } from './services/semester-reports.service';
+import { LicenseDialogComponent } from './license-dialog/license-dialog.component';
 
 registerLocaleData(localePl);
 @NgModule({
@@ -40,6 +41,7 @@ registerLocaleData(localePl);
     FinishTimeComponent,
     FooterComponent,
     HeaderComponent,
+    LicenseDialogComponent,
     MeetingsComponent,
     MeetingsDialogComponent,
     ProjectInfoComponent,

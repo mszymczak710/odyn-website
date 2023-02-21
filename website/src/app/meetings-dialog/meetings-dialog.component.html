@@ -1,22 +1,11 @@
 <div class="dialog">
-  <h1 class="dialog-title" mat-dialog-title>
-    Spotkanie #{{ data.position }} (godz. {{ data.start_time }} -
-    {{ data.finish_time }})
-  </h1>
+  <h1 class="dialog-title" mat-dialog-title> Spotkanie #{{ data.position }} (godz. {{ data.startTime }} - {{
+    data.finishTime }}) </h1>
   <div class="dialog-content" mat-dialog-content>
-    <span
-      >{{ data.description1 }} <br />
-      {{ data.description2 }}</span
-    >
+    <span>{{ data.title }} <br /> {{ data.description }}</span>
   </div>
   <div class="dialog-actions" align="end" mat-dialog-actions>
-    <button
-      mat-mini-fab
-      color="warn"
-      matTooltip="Zamknij okno"
-      matTooltipPosition="above"
-      mat-dialog-close
-    >
+    <button mat-mini-fab color="warn" matTooltip="Zamknij okno" matTooltipPosition="above" mat-dialog-close>
       <mat-icon>close</mat-icon>
     </button>
   </div>
