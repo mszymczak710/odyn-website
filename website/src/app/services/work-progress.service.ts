@@ -7,11 +7,11 @@ import { WorkProgress } from '../models/work-progress.model';
 export class WorkProgressService {
   constructor() {}
   getData() {
-    return ELEMENT_DATA;
+    return WORK_PROGRESS_DATA;
   }
 }
 
-const ELEMENT_DATA: WorkProgress[] = [
+const WORK_PROGRESS_DATA: WorkProgress[] = [
   {
     year: 2022,
     month: '12',

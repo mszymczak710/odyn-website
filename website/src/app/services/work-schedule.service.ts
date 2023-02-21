@@ -7,11 +7,11 @@ import { WorkSchedule } from '../models/work-schedule.model';
 export class WorkScheduleService {
   constructor() {}
   getData() {
-    return ELEMENT_DATA;
+    return WORK_SCHEDULE_DATA;
   }
 }
 
-const ELEMENT_DATA: WorkSchedule[] = [
+const WORK_SCHEDULE_DATA: WorkSchedule[] = [
   {
     month: 'Listopad',
     year: 2022,

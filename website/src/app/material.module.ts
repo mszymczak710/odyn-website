@@ -7,10 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatListModule } from '@angular/material/list';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   exports: [
     MatButtonModule,
@@ -21,9 +19,8 @@ import { MatListModule } from '@angular/material/list';
     MatNativeDateModule,
     MatSnackBarModule,
     MatTableModule,
-    MatTooltipModule,
     MatTabsModule,
-    MatListModule,
+    MatTooltipModule,
   ],
 })
 export class MaterialModule {}

@@ -7,11 +7,11 @@ import { Team } from '../models/team.model';
 export class TeamService {
   constructor() {}
   getData() {
-    return ELEMENT_DATA;
+    return TEAM_DATA;
   }
 }
 
-const ELEMENT_DATA: Team[] = [
+const TEAM_DATA: Team[] = [
   {
     fullname: 'Krzysztof T. Czarkowski',
     role1: 'Opiekun zespołu',

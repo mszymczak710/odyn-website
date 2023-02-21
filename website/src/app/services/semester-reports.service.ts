@@ -11,14 +11,14 @@ import { Team } from '../models/team.model';
 export class SemesterReportsService {
   constructor() {}
   getWinterReportsData() {
-    return WINTER_DATA;
+    return WINTER_REPORTS_DATA;
   }
   getSummerReportsData() {
-    return SUMMER_DATA;
+    return SUMMER_REPORTS_DATA;
   }
 }
 
-const WINTER_DATA: WinterSemesterReports[] = [
+const WINTER_REPORTS_DATA: WinterSemesterReports[] = [
   {
     src: './assets/reports/winter/Raport Wojciech Kuźbiński.pdf',
     description: 'Raport Wojciecha',
@@ -45,7 +45,7 @@ const WINTER_DATA: WinterSemesterReports[] = [
   },
 ];
 
-const SUMMER_DATA: SummerSemesterReports[] = [
+const SUMMER_REPORTS_DATA: SummerSemesterReports[] = [
   {
     src: '',
     description: 'Raport Wojciecha',

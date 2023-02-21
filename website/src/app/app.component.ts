@@ -1,7 +1,12 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
-import { ActivatedRoute } from '@angular/router';
+import {
+  MatSnackBar,
+  MatSnackBarHorizontalPosition,
+  MatSnackBarVerticalPosition,
+} from '@angular/material/snack-bar';
 import * as AOS from 'aos';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,15 +14,10 @@ import * as AOS from 'aos';
 })
 export class AppComponent {
   title = 'odyn';
-
-  constructor(private activatedRoute: ActivatedRoute, private snackBar: MatSnackBar) {}
+  constructor(private snackBar: MatSnackBar) {}
 
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
-
-  navigateTo(section: any) {
-    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-  }
 
   ngOnInit() {
     AOS.init({
@@ -27,14 +27,15 @@ export class AppComponent {
       },
     });
 
-    this.snackBar.open("Prace nad stroną dalej trwają...", 'OK', {
+    this.snackBar.open('Prace nad stroną dalej trwają...', 'OK', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
       duration: 3500,
-  });
-
-    this.activatedRoute.fragment.subscribe((value) => {
-      this.navigateTo(value);
     });
+  }
+
+  onActivate() {
+    let height = window.innerHeight;
+    window.scrollTo({ left: 0, top: height, behavior: 'smooth' });
   }
 }
