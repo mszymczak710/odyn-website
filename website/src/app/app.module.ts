@@ -23,6 +23,7 @@ import {
   MeetingsComponent,
 } from './meetings/meetings.component';
 import { MeetingsDialogComponent } from './meetings-dialog/meetings-dialog.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProjectInfoComponent } from './project-info/project-info.component';
 import { SemesterReportsComponent } from './semester-reports/semester-reports.component';
 import { TeamComponent } from './team/team.component';
@@ -42,6 +43,7 @@ registerLocaleData(localePl);
     LicenseDialogComponent,
     MeetingsComponent,
     MeetingsDialogComponent,
+    PageNotFoundComponent,
     ProjectInfoComponent,
     SemesterReportsComponent,
     TeamComponent,

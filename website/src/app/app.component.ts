@@ -20,6 +20,8 @@ export class AppComponent {
 
   onActivate() {
     let height = window.innerHeight;
-    window.scrollTo({ left: 0, top: height, behavior: 'smooth' });
+    setTimeout(() => {
+      window.scrollTo({ left: 0, top: height, behavior: 'smooth' });
+    }, 1000);
   }
 }
