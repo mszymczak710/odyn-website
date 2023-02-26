@@ -1,173 +1,126 @@
 .project-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 70vh;
-  margin: 12vh 0 8vh 0;
-  width: 75vw;
-  padding-bottom: 10vh;
-  background-color: #242424;
-  box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 35%);
-  border-radius: 15px;
-
-  @media screen and (max-width: 480px) {
-    width: 85vw;
-    min-height: 65vh;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 85vw;
-    min-height: 75vh;
-  }
-}
-
-h1 {
-  font-size: 70px;
-  margin-top: 10vh;
-
-  @media screen and (max-width: 480px) {
+  h2 {
     font-size: 40px;
-    margin-top: 5vh;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: #ddd;
+    margin-top: 10vh;
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      font-size: 35px;
+    }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 55px;
-    margin-top: 7.5vh;
-  }
-}
-
-ul {
-  color: white;
-  font-size: 26px;
-  line-height: 1.25;
-  margin: 0;
-
-  @media screen and (max-width: 480px) {
-    font-size: 16px;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 21px;
-  }
-}
-
-h2 {
-  font-size: 50px;
-  margin-top: 15vh;
-
-  @media screen and (max-width: 480px) {
+  p {
     font-size: 25px;
-    margin-top: 5vh;
+    line-height: 1.25;
+    text-align: center;
+    margin: 0 10vw;
+
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+      margin: 0 5vw;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: 20px;
+    }
   }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 37px;
-    margin-top: 7.5vh;
-  }
-}
-
-h1,
-h2 {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  color: white;
-}
-
-.license-text {
-  font-size: 26px;
-  z-index: 1;
 
   a {
-    color: #bbb;
+    color: #999;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 16px;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 21px;
-  }
-}
-
-.license-btn {
-  margin-top: 5vh;
-}
-
-p {
-  font-size: 30px;
-  line-height: 1.25;
-  text-align: center;
-  color: white;
-  margin: 0 6vw;
-
-  @media screen and (max-width: 480px) {
+  ul {
+    list-style-type: "\1F44D";
     font-size: 20px;
-    margin: 0 2vw;
+    line-height: 1.25;
+    margin: 2vh 10vw;
+
+    @media screen and (max-width: 480px) {
+      font-size: 10px;
+      margin: 2vh 5vw;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: 15px;
+    }
+
+    li {
+      padding-left: 5px;
+    }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 25px;
-    margin: 0 4vw;
-  }
-}
-
-.logos {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  column-gap: 7.5vw;
-  row-gap: 5vh;
-  width: 50vw;
-  grid-template-areas:
-    "ts angular android"
-    "github dc tensorflow"
-    "trello kotlin java";
-
-  .github {
-    grid-area: github;
+  .license-btn {
+    font-size: 16px;
+    margin-top: 5vh;
   }
 
-  .trello {
-    grid-area: trello;
-  }
+  .logos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7.5vw;
+    row-gap: 5vh;
+    width: 50vw;
+    grid-template-areas:
+      "ts angular android"
+      "github dc tensorflow"
+      "trello kotlin java";
 
-  .java {
-    grid-area: java;
-  }
+    .github {
+      grid-area: github;
+    }
 
-  .ts {
-    grid-area: ts;
-  }
+    .trello {
+      grid-area: trello;
+    }
 
-  .dc {
-    grid-area: dc;
-  }
+    .java {
+      grid-area: java;
+    }
 
-  .tensorflow {
-    grid-area: tensorflow;
-  }
+    .ts {
+      grid-area: ts;
+    }
 
-  .kotlin {
-    grid-area: kotlin;
-  }
+    .dc {
+      grid-area: dc;
+    }
 
-  .android-studio {
-    grid-area: android;
-  }
+    .tensorflow {
+      grid-area: tensorflow;
+    }
 
-  .angular {
-    grid-area: angular;
-  }
+    .kotlin {
+      grid-area: kotlin;
+    }
 
-  .item {
-    max-width: 7.5vw;
+    .android-studio {
+      grid-area: android;
+    }
 
-    @media screen and (max-width: 768px) {
-      max-width: 15vw;
+    .angular {
+      grid-area: angular;
+    }
+
+    .item {
+      max-width: 5vw;
+
+      @media screen and (max-width: 768px) {
+        max-width: 10vw;
+      }
     }
   }
 }

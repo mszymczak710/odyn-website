@@ -3,14 +3,10 @@
   <div class="hr"></div>
   <div class="timeline">
     <div *ngFor="let element of events; let i = index">
-      <div
-        class="container"
-        [ngClass]="{ left: i % 2 !== 0, right: i % 2 == 0 }"
-        data-aos="flip-up"
-        data-aos-duration="1500"
-      >
+      <div class="container" [ngClass]="{ left: i % 2 !== 0, right: i % 2 == 0 }" data-aos="flip-up"
+        data-aos-duration="500">
         <div class="content">
-          <h2>{{ element.year }}/{{ element.month }}/{{ element.day }}</h2>
+          <h2>{{ element.day }}.{{ element.month }}.{{ element.year }}</h2>
           <p>{{ element.details }}</p>
         </div>
       </div>

@@ -1,195 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap");
 
 .header {
-  height: 100vh;
+  height: 90vh;
   background-image: url("../../assets/images/background/pexels-abet-llacer-927444.png");
   background-size: cover;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   position: relative;
 
-  .header-title {
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 8px #000;
-    font-size: 120px;
-    top: 25vh;
-
-    @media screen and (max-width: 480px) {
-      font-size: 60px;
-      top: 20vh;
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-      font-size: 80px;
-      top: 15vh;
-    }
-  }
-
-  .header-subtitle {
-    font-size: 40px;
-    top: 40vh;
-
-    @media screen and (max-width: 480px) {
-      font-size: 20px;
-      top: 30vh;
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-      font-size: 30px;
-      top: 27.5vh;
-    }
-  }
-
-  .header-title,
-  .header-subtitle {
-    color: white;
-    font-family: "Fira Sans Extra Condensed", sans-serif;
+  .triangle-shape {
     position: absolute;
-    animation: headlines 1.5s ease-in-out alternate;
-
-    @keyframes headlines {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      animation: none;
-    }
+    bottom: -1px;
+    border-left: 50vw solid #1f1f1f;
+    border-right: 50vw solid #1f1f1f;
+    border-top: 15vh solid transparent;
   }
 
-  .navigation {
-    width: 80vw;
-    height: 30vh;
+  .header-content {
+    height: 75vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 5vw;
+    flex-direction: column;
     align-items: center;
-    margin-top: 43vh;
-    z-index: 1;
+    justify-content: center;
+    row-gap: 5vh;
 
     @media screen and (max-width: 480px) {
-      margin-top: 40vh;
+      row-gap: 1vh;
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin-top: 40vh;
-      row-gap: 5vh;
+      row-gap: 3vh;
     }
 
-    .btn {
-      background-color: transparent;
-      font-size: 30px;
-      color: white;
-      border: 5px solid white;
-      width: 70px;
-      height: 70px;
-      font-size: 35px;
-      border-radius: 50%;
-      transition: width 0.5s ease, height 0.5s ease, font-size 0.5s ease;
-
-      &:hover {
-        background-color: #d61111;
-        width: 80px;
-        height: 80px;
-        font-size: 40px;
-      }
+    h1 {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 4px 4px 8px #000;
+      font-size: 120px;
 
       @media screen and (max-width: 480px) {
-        width: 50px;
-        height: 50px;
-        font-size: 25px;
-        border-width: 3px;
-        transition: none;
+        font-size: 60px;
       }
 
       @media screen and (min-width: 481px) and (max-width: 768px) {
-        border-width: 3px;
-        transition: none;
+        font-size: 80px;
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        font-size: 100px;
       }
     }
-  }
-}
 
-.video-recorder {
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  font-family: "Martian Mono", monospace;
-  color: white;
-  font-size: 20px;
-  line-height: 1.25;
-  z-index: 0;
+    h2 {
+      font-size: 40px;
 
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
+      @media screen and (max-width: 480px) {
+        font-size: 20px;
+      }
 
-  .corners {
-    position: fixed;
-    top: 2vh;
-    left: 1vw;
-    width: 95vw;
-    height: 86vh;
-    padding: 10px;
-    margin: 0 auto;
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 30px;
+      }
 
-    .top,
-    .bottom {
-      position: absolute;
-      width: 60px;
-      height: 50px;
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        font-size: 35px;
+      }
     }
 
-    .top {
-      top: 0;
-      border-top: 4px solid #fff;
-    }
+    h1,
+    h2 {
+      color: #ddd;
+      font-family: "Fira Sans Extra Condensed", sans-serif;
+      animation: headlines 1.5s ease-in-out alternate;
 
-    .bottom {
-      bottom: 0;
-      border-bottom: 4px solid #fff;
-    }
-
-    .left {
-      left: 0;
-      border-left: 4px solid #fff;
-    }
-
-    .right {
-      right: 0;
-      border-right: 4px solid #fff;
-      margin-right: -2vw;
-    }
-  }
-  .recorder {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 5vh;
-    left: 3vw;
-
-    .play_icon {
-      font-size: 18px;
-      position: relative;
-      bottom: 1px;
-    }
-
-    .rec_icon {
-      font-size: 16px;
-      position: relative;
-      bottom: 2px;
-      color: red;
-      animation: display 1s infinite;
-
-      @keyframes display {
+      @keyframes headlines {
         from {
           opacity: 0;
         }
@@ -197,12 +79,80 @@
           opacity: 1;
         }
       }
-    }
-  }
 
-  .timer {
-    position: fixed;
-    top: 5vh;
-    right: 3vw;
+      @media screen and (max-width: 768px) {
+        animation: none;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      column-gap: 5vw;
+      margin: 0 10vw;
+
+      @media screen and (max-width: 480px) {
+        margin: 0 15vw;
+        row-gap: 3vh;
+      }
+
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin: 0 15vw;
+        row-gap: 3vh;
+        column-gap: 2.5vw;
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        column-gap: 3vw;
+      }
+
+      .btn {
+        background-color: transparent;
+        font-size: 30px;
+        color: #ddd;
+        border: 5px solid #ddd;
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+        border-radius: 50%;
+        transition: width 0.5s ease, height 0.5s ease, font-size 0.5s ease;
+
+        &:hover {
+          background-color: #d61111;
+          @media screen and (min-width: 769px) {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+          border-width: 3px;
+          transition: none;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          width: 60px;
+          height: 60px;
+          font-size: 30px;
+          border-width: 3px;
+          transition: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1200px) {
+          width: 64px;
+          height: 64px;
+          font-size: 32px;
+          border-width: 4px;
+          transition: none;
+        }
+      }
+    }
   }
 }

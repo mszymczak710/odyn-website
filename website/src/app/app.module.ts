@@ -1,6 +1,7 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { CameraScreenComponent } from './camera-screen/camera-screen.component';
 import { CdTimerModule } from 'angular-cd-timer';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { DateAdapter } from '@angular/material/core';
@@ -32,6 +33,7 @@ registerLocaleData(localePl);
 @NgModule({
   declarations: [
     AppComponent,
+    CameraScreenComponent,
     CustomHeader,
     DocumentationComponent,
     FinishTimeComponent,

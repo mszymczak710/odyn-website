@@ -1,10 +1,4 @@
-import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
-import {
-  MatSnackBar,
-  MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition,
-} from '@angular/material/snack-bar';
 import * as AOS from 'aos';
 
 @Component({
@@ -14,10 +8,6 @@ import * as AOS from 'aos';
 })
 export class AppComponent {
   title = 'odyn';
-  constructor(private snackBar: MatSnackBar) {}
-
-  horizontalPosition: MatSnackBarHorizontalPosition = 'center';
-  verticalPosition: MatSnackBarVerticalPosition = 'top';
 
   ngOnInit() {
     AOS.init({
@@ -25,12 +15,6 @@ export class AppComponent {
         let maxWidth = 1024;
         return window.innerWidth < maxWidth;
       },
-    });
-
-    this.snackBar.open('Prace nad stroną dalej trwają...', 'OK', {
-      horizontalPosition: this.horizontalPosition,
-      verticalPosition: this.verticalPosition,
-      duration: 3500,
     });
   }
 

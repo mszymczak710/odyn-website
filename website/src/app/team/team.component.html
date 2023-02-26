@@ -1,16 +1,13 @@
 <div class="team">
   <h1>Nasz zespół</h1>
   <div class="hr"></div>
-
-  <div class="content" data-aos="zoom-in" data-aos-duration="1500">
-    <div class="row">
+  <div class="content" data-aos="zoom-in" data-aos-duration="500">
+    <div class="keeper">
       <mat-card *ngFor="let person of teamMembers.slice(0, 1)">
         <mat-card-header>
           <mat-card-title-group>
-            <mat-card-title>{{ person.fullname }}</mat-card-title>
-            <mat-card-subtitle class="role">
-              {{ person.role1 }}
-              <i class="fas fa-crown"></i>
+            <mat-card-title class="full-name">{{ person.fullname }}</mat-card-title>
+            <mat-card-subtitle class="role"> {{ person.role1 }} <i class="fas fa-crown"></i>
             </mat-card-subtitle>
             <mat-card-subtitle class="mail">
               <i class="fa fa-envelope"></i>
@@ -19,27 +16,18 @@
           </mat-card-title-group>
         </mat-card-header>
         <mat-card-content>
-          <img
-            class="keeper-avatar"
-            src="{{ person.imageSrc }}"
-            alt="{{ person.imageAlt }}"
-          />
+          <img class="avatar" src="{{ person.imageSrc }}" alt="{{ person.imageAlt }}" />
         </mat-card-content>
       </mat-card>
     </div>
-
-    <div class="row">
+    <div class="members">
       <mat-card *ngFor="let person of teamMembers.slice(1, 7)">
         <mat-card-header>
           <mat-card-title-group>
-            <mat-card-title>{{ person.fullname }}</mat-card-title>
-            <mat-card-subtitle class="role">
-              {{ person.role1 }}
-            </mat-card-subtitle>
+            <mat-card-title class="full-name">{{ person.fullname }}</mat-card-title>
+            <mat-card-subtitle class="role"> {{ person.role1 }} </mat-card-subtitle>
             <mat-card-subtitle class="tech">
-              <i class="fa fa-keyboard-o icon"></i>
-              {{ person.technologies }}
-            </mat-card-subtitle>
+              <i class="fa fa-keyboard-o"></i> {{ person.technologies }} </mat-card-subtitle>
             <mat-card-subtitle class="mail">
               <i class="fa fa-envelope"></i>
               <a href="mailto: {{ person.email }}">{{ person.email }}</a>
@@ -47,11 +35,7 @@
           </mat-card-title-group>
         </mat-card-header>
         <mat-card-content>
-          <img
-            class="member-avatar"
-            src="{{ person.imageSrc }}"
-            alt="{{ person.imageAlt }}"
-          />
+          <img class="avatar" src="{{ person.imageSrc }}" alt="{{ person.imageAlt }}" />
         </mat-card-content>
       </mat-card>
     </div>

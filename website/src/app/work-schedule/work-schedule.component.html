@@ -2,7 +2,7 @@
   <h1>Harmonogram pracy</h1>
   <div class="hr"></div>
   <div class="table">
-    <table mat-table [dataSource]="events" data-aos="flip-down" data-aos-duration="1500">
+    <table mat-table [dataSource]="events" data-aos="flip-down" data-aos-duration="500">
       <ng-container matColumnDef="date">
         <th mat-header-cell *matHeaderCellDef> Okres </th>
         <td mat-cell *matCellDef="let element"> {{element.month}} {{element.year}} </td>

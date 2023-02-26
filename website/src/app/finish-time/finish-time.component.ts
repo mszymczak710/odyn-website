@@ -54,12 +54,12 @@ export class FinishTimeComponent {
       : (this.weeks.nativeElement.innerText = Math.floor(this.difference));
 
     Math.floor(this.difference / 7) < 10
-      ? (this.days.nativeElement.innerText = '0' + Math.floor(this.difference / 7))
+      ? (this.days.nativeElement.innerText =
+          '0' + Math.floor(this.difference / 7))
       : (this.days.nativeElement.innerText = Math.floor(this.difference / 7));
 
-      23 - this.date.getHours() < 10
-      ? (this.hours.nativeElement.innerText =
-          '0' + (23 - this.date.getHours()))
+    23 - this.date.getHours() < 10
+      ? (this.hours.nativeElement.innerText = '0' + (23 - this.date.getHours()))
       : (this.hours.nativeElement.innerText = 23 - this.date.getHours());
 
     59 - this.date.getMinutes() < 10

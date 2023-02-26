@@ -30,7 +30,7 @@ const TEAM_DATA: Team[] = [
   },
   {
     fullname: 'Mateusz Szymczak',
-    role1: 'Frontend Developer',
+    role1: 'Sekretarz 🞄 Frontend Developer',
     email: 'mszymczak710@mat.umk.pl',
     technologies: 'TypeScript 🞄 Angular',
     imageSrc: './assets/images/team/icons8-customer-100.png',

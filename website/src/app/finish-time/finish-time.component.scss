@@ -1,93 +1,68 @@
 .countdown-timer {
-  display: flex;
-  flex-direction: column;
-  min-height: 50vh;
-  width: 75vw;
   text-align: center;
-  background-color: #242424;
-  margin: 8vh 0 16vh 0;
-  box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 35%);
-  border-radius: 15px;
-
-  @media screen and (max-width: 480px) {
-    width: 85vw;
-    min-height: 20vh;
-    margin-top: 4vh;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 85vw;
-    min-height: 15vh;
-    margin-top: 6vh;
-  }
+  padding: 4vh 0;
+  margin: 8vh 0 16vh;
 
   h1 {
-    font-family: "Fira Sans Extra Condensed", sans-serif;
-    font-size: 60px;
-    color: #fff;
-    margin-top: 10vh;
     line-height: 1.1;
-
-    @media screen and (max-width: 480px) {
-      font-size: 30px;
-      margin-top: 5vh;
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-      font-size: 45px;
-      margin-top: 7.5vh;
-    }
   }
 
   .wrapper {
-    margin: 8vh 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    margin: 4vh 0;
+    gap: 60px;
 
     @media screen and (max-width: 480px) {
-      margin: 2vh 0;
+      margin: 2vh 8vw;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 20px;
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin: 4vh 0;
+      margin: 4vh 2vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
       flex-wrap: wrap;
       gap: 40px;
     }
 
     .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      min-width: 140px;
+      min-height: 140px;
       background-color: #444;
       box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
       border-radius: 10px;
-      width: 9vw;
-      height: 20vh;
 
       @media screen and (max-width: 480px) {
-        width: 24vw;
-        height: 14vh;
+        min-width: 75px;
+        min-height: 75px;
+        gap: 0;
       }
 
       @media screen and (min-width: 481px) and (max-width: 768px) {
-        width: 18vw;
-        height: 19vh;
+        min-width: 100px;
+        min-height: 100px;
+        gap: 10px;
       }
     }
 
     .title {
       color: #bbb;
-      padding: 3vh 0;
-      font: normal 30px sans-serif;
+      font-size: 30px;
 
       @media screen and (max-width: 480px) {
-        padding: 1vh 0;
         font-size: 15px;
       }
 
       @media screen and (min-width: 481px) and (max-width: 768px) {
-        padding: 2vh 0;
         font-size: 20px;
       }
     }
@@ -97,16 +72,13 @@
       position: relative;
       font-family: "Martian Mono", monospace;
       font-size: 50px;
-      padding-bottom: 5vh;
 
       @media screen and (max-width: 480px) {
         font-size: 30px;
-        padding-bottom: 1vh;
       }
 
       @media screen and (min-width: 481px) and (max-width: 768px) {
         font-size: 40px;
-        padding-bottom: 2vh;
       }
 
       ::ng-deep img {
@@ -121,13 +93,11 @@
         @media screen and (max-width: 480px) {
           width: 30px;
           height: 30px;
-          transform: translate(-50%, -30%);
         }
 
         @media screen and (min-width: 481px) and (max-width: 768px) {
           width: 40px;
           height: 40px;
-          transform: translate(-50%, -30%);
         }
       }
     }
