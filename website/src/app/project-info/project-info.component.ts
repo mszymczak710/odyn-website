@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { LicenseDialogComponent } from '../license-dialog/license-dialog.component';
+import { Technologies } from '../models/technologies.model';
+import { TechnologiesService } from '../services/technologies.service';
 
 @Component({
   selector: 'app-project-info',
@@ -8,7 +10,16 @@ import { LicenseDialogComponent } from '../license-dialog/license-dialog.compone
   styleUrls: ['./project-info.component.scss'],
 })
 export class ProjectInfoComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private dataService: TechnologiesService
+  ) {}
+
+  technologies: Technologies[];
+
+  ngOnInit() {
+    this.technologies = this.dataService.getData();
+  }
 
   openDialog(): void {
     const dialogConfig = new MatDialogConfig();

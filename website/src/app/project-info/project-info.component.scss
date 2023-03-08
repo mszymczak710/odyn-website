@@ -68,58 +68,24 @@
   }
 
   .logos {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 7.5vw;
-    row-gap: 5vh;
+    flex-wrap: wrap;
+    column-gap: 10vw;
+    row-gap: 10vh;
     width: 50vw;
-    grid-template-areas:
-      "ts angular android"
-      "github dc tensorflow"
-      "trello kotlin java";
+    padding: 0 5vw;
 
-    .github {
-      grid-area: github;
-    }
-
-    .trello {
-      grid-area: trello;
-    }
-
-    .java {
-      grid-area: java;
-    }
-
-    .ts {
-      grid-area: ts;
-    }
-
-    .dc {
-      grid-area: dc;
-    }
-
-    .tensorflow {
-      grid-area: tensorflow;
-    }
-
-    .kotlin {
-      grid-area: kotlin;
-    }
-
-    .android-studio {
-      grid-area: android;
-    }
-
-    .angular {
-      grid-area: angular;
+    @media screen and (max-width: 768px) {
+      padding: 0;
     }
 
     .item {
       max-width: 5vw;
 
       @media screen and (max-width: 768px) {
-        max-width: 10vw;
+        max-width: 7.5vw;
       }
     }
   }

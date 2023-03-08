@@ -16,29 +16,8 @@
         <h2>Technologie i aplikacje</h2>
         <div class="shr"></div>
         <div class="logos" data-aos="zoom-in" data-aos-duration="1000">
-                <a href="http:///developer.android.com/studio" target="_blank" rel="noreferrer"
-                        class="android-studio"><img src="./assets/images/technologies/Android_Studio_Icon_3.6.png"
-                                alt="Android Studio" class="item" /></a>
-                <a href="http://java.com/pl/" target="_blank" rel="noreferrer" class="java"><img
-                                src="./assets/images/technologies/Java_programming_language_logo.png" alt="Java"
-                                class="item" /></a>
-                <a href="http://github.com" target="_blank" rel="noreferrer" class="github"><img
-                                src="./assets/images/technologies/github.png" alt="GitHub" class="item" /></a>
-                <a href="http://discord.com" target="_blank" rel="noreferrer" class="dc"><img
-                                src="./assets/images/technologies/discord.png" alt="Discord" class="item" /></a>
-                <a href="http://angular.io" target="_blank" rel="noreferrer" class="angular"><img
-                                src="./assets/images/technologies/Angular_full_color_logo.png" alt="Angular"
-                                class="item" /></a>
-                <a href="http://typescriptlang.org/" target="_blank" rel="noreferrer" class="ts"><img
-                                src="./assets/images/technologies/Typescript_logo_2020.png" alt="TypeScript"
-                                class="item" /></a>
-                <a href="http://trello.com/pl" target="_blank" rel="noreferrer" class="trello"><img
-                                src="./assets/images/technologies/Trello_logo.png" alt="Trello" class="item" /></a>
-                <a href="http://kotlinlang.org" target="_blank" rel="noreferrer" class="kotlin"><img
-                                src="./assets/images/technologies/Kotlin_logo.png" alt="Kotlin" class="item" /></a>
-                <a href="http://tensorflow.org/" target="_blank" rel="noreferrer" class="tensorflow"><img
-                                src="./assets/images/technologies/TensorFlow_logo.png" class="item"
-                                alt="Tensor Flow" /></a>
+                <a *ngFor="let element of technologies" href="{{element.href}}" target="_blank" rel="noreferrer"><img
+                                src="{{element.imageSrc}}" alt="{{element.imageAlt}}" class="item" /></a>
         </div>
         <h2>Licencja</h2>
         <div class="shr"></div>

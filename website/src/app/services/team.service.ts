@@ -25,7 +25,7 @@ const TEAM_DATA: Team[] = [
     role1: 'Kierownik 🞄 Backend Developer',
     email: 'wojkuzb@mat.umk.pl',
     technologies: 'TBA',
-    imageSrc: './assets/images/team/icons8-customer-100.png',
+    imageSrc: './assets/images/team/Wojciech.png',
     imageAlt: 'Kierownik zespołu',
   },
   {
@@ -33,7 +33,7 @@ const TEAM_DATA: Team[] = [
     role1: 'Sekretarz 🞄 Frontend Developer',
     email: 'mszymczak710@mat.umk.pl',
     technologies: 'TypeScript 🞄 Angular',
-    imageSrc: './assets/images/team/icons8-customer-100.png',
+    imageSrc: './assets/images/team/Mateusz.png',
     imageAlt: 'Sekretarz zespołu',
   },
   {
@@ -41,7 +41,7 @@ const TEAM_DATA: Team[] = [
     role1: 'Backend Developer',
     email: 'galdam@mat.umk.pl',
     technologies: 'TBA',
-    imageSrc: './assets/images/team/icons8-customer-100.png',
+    imageSrc: './assets/images/team/Damian.png',
     imageAlt: 'Członek zespołu',
   },
   {

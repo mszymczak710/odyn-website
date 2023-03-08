@@ -144,4 +144,15 @@ const MEETINGS_DATA: Meetings[] = [
     isMeetingWithCoordinator: false,
     location: 'zdalnie',
   },
+  {
+    id: 14,
+    date: '2023-03-07',
+    startTime: '16:00',
+    finishTime: '16:45',
+    title: 'Spotkanie z opiekunem zespołu',
+    description:
+      '(ustalenie terminu spotkań, rozmowa o organizacji pracy - GitHub)',
+    isMeetingWithCoordinator: false,
+    location: 'WMiI UMK (sala L14)',
+  },
 ];
