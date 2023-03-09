@@ -5,24 +5,29 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0 5vw;
+    margin: 0 7.5vw;
     gap: 25px;
 
+    @media screen and (max-width: 599px) {
+      margin: 0;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+      margin: 0 2.5vw;
+    }
+
     mat-card {
+      flex-basis: 20vw;
       align-items: center;
       text-align: center;
-      min-width: 260px;
-      min-height: 260px;
       border-radius: 10px;
 
-      @media screen and (max-width: 768px) {
-        min-width: 210px;
-        min-height: 210px;
+      @media screen and (max-width: 599px) {
+        flex-basis: 50vw;
       }
 
-      @media screen and (min-width: 769px) and (max-width: 1200px) {
-        min-width: 240px;
-        min-height: 240px;
+      @media screen and (min-width: 600px) and (max-width: 1024px) {
+        flex-basis: 35vw;
       }
 
       &:hover {

@@ -22,11 +22,11 @@
     font-size: 25px;
     line-height: 1.25;
     text-align: center;
-    margin: 0 10vw;
+    margin: 0 10vw 5vh;
 
     @media screen and (max-width: 480px) {
       font-size: 15px;
-      margin: 0 5vw;
+      margin: 0 5vw 2.5vh;
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -46,11 +46,10 @@
     list-style-type: "\1F44D";
     font-size: 20px;
     line-height: 1.25;
-    margin: 2vh 10vw;
+    margin: -3vh 0 2vh;
 
     @media screen and (max-width: 480px) {
       font-size: 10px;
-      margin: 2vh 5vw;
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -62,23 +61,17 @@
     }
   }
 
-  .license-btn {
-    font-size: 16px;
-    margin-top: 5vh;
-  }
-
   .logos {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 10vw;
-    row-gap: 10vh;
-    width: 50vw;
-    padding: 0 5vw;
+    column-gap: 7.5vw;
+    row-gap: 7.5vh;
+    width: 40vw;
 
     @media screen and (max-width: 768px) {
-      padding: 0;
+      width: 50vw;
     }
 
     .item {
