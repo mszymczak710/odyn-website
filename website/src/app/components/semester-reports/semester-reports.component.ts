@@ -7,8 +7,8 @@ import {
 import {
   SummerSemesterReports,
   WinterSemesterReports,
-} from '../models/semester-reports.model';
-import { SemesterReportsService } from '../services/semester-reports.service';
+} from '../../common/models/semester-reports.model';
+import { SemesterReportsService } from '../../common/services/semester-reports.service';
 
 @Component({
   selector: 'app-semester-reports',

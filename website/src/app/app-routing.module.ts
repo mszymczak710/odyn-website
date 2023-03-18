@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DocumentationComponent } from './documentation/documentation.component';
-import { HeaderComponent } from './header/header.component';
-import { MeetingsComponent } from './meetings/meetings.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProjectInfoComponent } from './project-info/project-info.component';
-import { SemesterReportsComponent } from './semester-reports/semester-reports.component';
-import { TeamComponent } from './team/team.component';
-import { WorkProgressComponent } from './work-progress/work-progress.component';
-import { WorkScheduleComponent } from './work-schedule/work-schedule.component';
+import { DocumentationComponent } from './components/documentation/documentation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MeetingsComponent } from './components/meetings/meetings.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ProjectInfoComponent } from './components/project-info/project-info.component';
+import { SemesterReportsComponent } from './components/semester-reports/semester-reports.component';
+import { TeamComponent } from './components/team/team.component';
+import { WorkProgressComponent } from './components/work-progress/work-progress.component';
+import { WorkScheduleComponent } from './components/work-schedule/work-schedule.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'project-info', pathMatch: 'full' },

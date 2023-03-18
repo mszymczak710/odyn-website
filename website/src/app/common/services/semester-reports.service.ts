@@ -3,7 +3,6 @@ import {
   SummerSemesterReports,
   WinterSemesterReports,
 } from '../models/semester-reports.model';
-import { Team } from '../models/team.model';
 
 @Injectable({
   providedIn: 'root',
