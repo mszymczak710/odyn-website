@@ -1,6 +1,8 @@
+import { PrimeIcons } from 'primeng/api';
+
 export interface WorkProgress {
-  year: number;
-  month: string;
-  day: string;
+  date: string;
   details: string;
+  icon: PrimeIcons;
+  color: string;
 }

@@ -1,6 +1,8 @@
+@import "/src/variables.scss";
+
 .meetings {
   .span-info {
-    color: #f44336;
+    color: $warn-color;
     font-size: 25px;
     opacity: 0;
     transition: opacity 1s ease-in-out;

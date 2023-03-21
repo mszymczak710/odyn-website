@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { PrimeIcons } from 'primeng/api';
 import { WorkProgress } from '../models/work-progress.model';
 
 @Injectable({
@@ -13,33 +14,33 @@ export class WorkProgressService {
 
 const WORK_PROGRESS_DATA: WorkProgress[] = [
   {
-    year: 2022,
-    month: '12',
-    day: '06',
+    date: '06.12.2022',
     details: 'Wybranie tematu projektu',
+    icon: PrimeIcons.COG,
+    color: '#666',
   },
   {
-    year: 2022,
-    month: '12',
-    day: '09',
+    date: '09.12.2022',
     details: 'Wykonanie strony internetowej',
+    icon: PrimeIcons.COG,
+    color: '#666',
   },
   {
-    year: 2022,
-    month: '12',
-    day: '19',
+    date: '19.12.2022',
     details: 'Utworzenie repozytorium na GitHub',
+    icon: PrimeIcons.COG,
+    color: '#666',
   },
   {
-    year: 2022,
-    month: '12',
-    day: '20',
+    date: '20.12.2022',
     details: 'Ustalenie sposobu działania przygotowywanej aplikacji',
+    icon: PrimeIcons.COG,
+    color: '#666',
   },
   {
-    year: 2023,
-    month: '01',
-    day: '17',
+    date: '17.01.2023',
     details: 'Stworzenie wersji pre-pre-alpha aplikacji',
+    icon: PrimeIcons.COG,
+    color: '#666',
   },
 ];

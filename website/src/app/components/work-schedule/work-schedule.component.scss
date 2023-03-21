@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 .work-schedule {
   .table {
     width: 60vw;
@@ -22,11 +24,11 @@
     }
 
     .fa-close {
-      color: #f44336;
+      color: $warn-color;
     }
 
     .fa-check {
-      color: #69f0ae;
+      color: $accent-color;
     }
 
     .fa-cog {

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap");
+@import "/src/variables.scss";
 
 .header {
-  height: 90vh;
+  height: 100vh;
   background-image: url("../../../assets/images/background/pexels-abet-llacer-927444.png");
   background-size: cover;
   position: relative;
@@ -9,19 +10,18 @@
   .triangle-shape {
     position: absolute;
     bottom: -1px;
-    border-left: 50vw solid #1f1f1f;
-    border-right: 50vw solid #1f1f1f;
-    border-top: 15vh solid transparent;
+    border-left: 50vw solid $bg-color;
+    border-right: 50vw solid $bg-color;
+    border-top: 12.5vh solid transparent;
   }
 
   .header-content {
-    height: 75vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 5vh;
-    z-index: 1;
 
     @media screen and (max-width: 480px) {
       row-gap: 1vh;
@@ -120,6 +120,7 @@
         font-size: 35px;
         border-radius: 50%;
         transition: width 0.5s ease, height 0.5s ease, font-size 0.5s ease;
+        z-index: 1;
 
         &:hover {
           background-color: #d61111;

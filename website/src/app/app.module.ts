@@ -10,6 +10,7 @@ import localePl from '@angular/common/locales/pl';
 import { MaterialModule } from './material.module';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
+import { TimelineModule } from 'primeng/timeline';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomHeader } from './components/meetings/custom-header/custom-header.component';
@@ -57,6 +58,7 @@ registerLocaleData(localePl);
     FormsModule,
     MaterialModule,
     RouterModule,
+    TimelineModule,
   ],
   providers: [
     { provide: MatDialogRef, useValue: {} },

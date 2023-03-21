@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 .documentation {
   .details {
     display: flex;
@@ -28,7 +30,7 @@
       }
 
       .pdf {
-        color: #f44336;
+        color: $warn-color;
       }
 
       .download {
