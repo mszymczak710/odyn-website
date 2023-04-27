@@ -15,18 +15,18 @@ export class GalleryComponent {
     const galleryRef: GalleryRef = this.gallery.ref(this.galleryId);
 
     galleryRef.addImage({
-      src: '/assets/images/gallery/1.png',
-      thumb: '/assets/images/gallery/1.png',
+      src: './assets/images/gallery/1.png',
+      thumb: './assets/images/gallery/1.png',
     });
 
     galleryRef.addImage({
-      src: '/assets/images/gallery/2.png',
-      thumb: '/assets/images/gallery/2.png',
+      src: './assets/images/gallery/2.png',
+      thumb: './assets/images/gallery/2.png',
     });
 
     galleryRef.addImage({
-      src: '/assets/images/gallery/3.png',
-      thumb: '/assets/images/gallery/3.png',
+      src: './assets/images/gallery/3.png',
+      thumb: './assets/images/gallery/3.png',
     });
 
     galleryRef.addYoutube({
