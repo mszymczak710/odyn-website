@@ -1,0 +1,17 @@
+<div class="gallery">
+  <h1>Galeria</h1>
+  <div class="hr"></div>
+  <p data-aos="fade-up" data-aos-animation="500ms">Poniżej prezentujemy dotychczasowe osiągnięcia zespołu w postaci
+    multimediów. <br>Zapraszamy do oglądania. </p>
+  <gallery id="gallery" [thumbTemplate]="thumbTemplate" [itemTemplate]="itemTemplate" data-aos="fade-up"
+    data-aos-animation="500ms"></gallery>
+  <ng-template #thumbTemplate let-type="type">
+    <span *ngIf="type === 'youtube'" class="item-type">
+      <i class="fa fa-youtube-play"></i>
+    </span>
+  </ng-template>
+  <ng-template #itemTemplate let-index="index" let-type="type" let-data="data" let-currIndex="currIndex"
+    let-isActive="isActive">
+    <span *ngIf="type === 'image' && isActive" [@slideAnimation] class="item-text"> {{data?.title}} </span>
+  </ng-template>
+</div>

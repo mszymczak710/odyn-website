@@ -17,6 +17,7 @@ import { CustomHeader } from './components/meetings/custom-header/custom-header.
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { FinishTimeComponent } from './components/finish-time/finish-time.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LicenseDialogComponent } from './components/project-info/license-dialog/license-dialog.component';
 import { MeetingsComponent } from './components/meetings/meetings.component';
@@ -28,6 +29,7 @@ import { TeamComponent } from './components/team/team.component';
 import { WorkProgressComponent } from './components/work-progress/work-progress.component';
 import { WorkScheduleComponent } from './components/work-schedule/work-schedule.component';
 import { CustomDateAdapter } from './common/custom-date-adapter';
+import { GalleryModule } from 'ng-gallery';
 
 registerLocaleData(localePl);
 @NgModule({
@@ -38,6 +40,7 @@ registerLocaleData(localePl);
     DocumentationComponent,
     FinishTimeComponent,
     FooterComponent,
+    GalleryComponent,
     HeaderComponent,
     LicenseDialogComponent,
     MeetingsComponent,
@@ -56,6 +59,7 @@ registerLocaleData(localePl);
     CommonModule,
     CdTimerModule,
     FormsModule,
+    GalleryModule,
     MaterialModule,
     RouterModule,
     TimelineModule,

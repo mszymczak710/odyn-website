@@ -34,19 +34,19 @@ const WORK_SCHEDULE_DATA: WorkSchedule[] = [
     month: 'Luty',
     year: 2023,
     details: 'Finalizacja podstawowej wersji aplikacji (nagrywanie, zapis)',
-    done: 'still-working',
+    done: 'yes',
   },
   {
     month: 'Marzec',
     year: 2023,
     details: 'Rozwój modułu odpowiedzialnego za analizę obrazu',
-    done: 'no',
+    done: 'yes',
   },
   {
     month: 'Kwiecień',
     year: 2023,
     details: 'Dodawanie funkcji, rozwój możliwości, ulepszanie aplikacji',
-    done: 'no',
+    done: 'still-working',
   },
   {
     month: 'Maj',

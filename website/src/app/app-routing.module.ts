@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DocumentationComponent } from './components/documentation/documentation.component';
-import { HeaderComponent } from './components/header/header.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { MeetingsComponent } from './components/meetings/meetings.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ProjectInfoComponent } from './components/project-info/project-info.component';
@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'project-info', pathMatch: 'full' },
   { path: 'documentation', component: DocumentationComponent },
   { path: 'meetings', component: MeetingsComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: 'project-info', component: ProjectInfoComponent },
   { path: 'semester-reports', component: SemesterReportsComponent },
   { path: 'team', component: TeamComponent },
