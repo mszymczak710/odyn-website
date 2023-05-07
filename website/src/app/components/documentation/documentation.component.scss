@@ -6,6 +6,18 @@
     flex-direction: column;
     row-gap: 5vh;
 
+    a {
+      text-decoration: none;
+    }
+
+    .doc-text {
+      justify-content: center;
+
+      &:hover {
+        background-color: #636363;
+      }
+    }
+
     mat-card {
       display: flex;
       flex-direction: row;
