@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.example.odyn"},{"l":"com.example.odyn.activities"},{"l":"com.example.odyn.cam"},{"l":"com.example.odyn.main_service"},{"l":"com.example.odyn.main_service.types"}]
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.odyn"},{"l":"com.example.odyn.activities"},{"l":"com.example.odyn.cam"},{"l":"com.example.odyn.gps"},{"l":"com.example.odyn.main_service"},{"l":"com.example.odyn.main_service.types"},{"l":"com.example.odyn.settings"}];updateSearchResults();

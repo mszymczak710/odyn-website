@@ -1,5 +1,7 @@
 com.example.odyn
 com.example.odyn.activities
 com.example.odyn.cam
+com.example.odyn.gps
 com.example.odyn.main_service
 com.example.odyn.main_service.types
+com.example.odyn.settings

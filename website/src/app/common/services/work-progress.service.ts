@@ -46,7 +46,7 @@ const WORK_PROGRESS_DATA: WorkProgress[] = [
   {
     date: '06.02.2023',
     details: 'Publikacja raportów z semestru zimowego 2022/2023',
-    icon: PrimeIcons.FILE_PDF,
+    icon: PrimeIcons.FILE_WORD,
     color: '#666',
   },
   {
@@ -65,6 +65,12 @@ const WORK_PROGRESS_DATA: WorkProgress[] = [
     date: '26.04.2023',
     details: 'Utworzenie GPS dla aplikacji',
     icon: PrimeIcons.MAP_MARKER,
+    color: '#666',
+  },
+  {
+    date: '07.05.2023',
+    details: 'Stworzenie dokumentacji technicznej',
+    icon: PrimeIcons.BOOK,
     color: '#666',
   },
 ];

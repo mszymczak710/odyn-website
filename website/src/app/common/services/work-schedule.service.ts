@@ -46,14 +46,14 @@ const WORK_SCHEDULE_DATA: WorkSchedule[] = [
     month: 'Kwiecień',
     year: 2023,
     details: 'Dodawanie funkcji, rozwój możliwości, ulepszanie aplikacji',
-    done: 'still-working',
+    done: 'yes',
   },
   {
     month: 'Maj',
     year: 2023,
     details:
       'Finalizacja projektu, umieszczenie pełnej dokumentacji, przygotowanie prezentacji',
-    done: 'no',
+    done: 'still-working',
   },
   {
     month: 'Czerwiec',
