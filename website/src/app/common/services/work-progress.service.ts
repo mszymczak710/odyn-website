@@ -73,4 +73,16 @@ const WORK_PROGRESS_DATA: WorkProgress[] = [
     icon: PrimeIcons.BOOK,
     color: '#666',
   },
+  {
+    date: '30 - 31.05.2023',
+    details: 'Próba techniczna i próba generalna prezentacji',
+    icon: PrimeIcons.COG,
+    color: '#666',
+  },
+  {
+    date: '01.06.2023',
+    details: 'Prezentacja projektu na auli WMiI UMK',
+    icon: PrimeIcons.ANDROID,
+    color: '#666',
+  },
 ];
