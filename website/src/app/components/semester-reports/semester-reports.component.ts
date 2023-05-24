@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   MatSnackBar,
   MatSnackBarHorizontalPosition,
@@ -15,7 +15,7 @@ import { SemesterReportsService } from '../../common/services/semester-reports.s
   templateUrl: './semester-reports.component.html',
   styleUrls: ['./semester-reports.component.scss'],
 })
-export class SemesterReportsComponent {
+export class SemesterReportsComponent implements OnInit {
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
 

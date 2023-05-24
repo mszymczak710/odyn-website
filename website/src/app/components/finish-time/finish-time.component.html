@@ -1,5 +1,8 @@
 <div class="countdown-timer">
-  <h1>Do publicznej prezentacji projektu pozostało:</h1>
+  <h1 *ngIf="!isTimeAfterPresentation; else finished">Do publicznej prezentacji projektu pozostało:</h1>
+  <ng-template #finished>
+    <h1>Od publicznej prezentacji minęło: </h1>
+  </ng-template>
   <div class="wrapper" data-aos="flip-down" data-aos-duration="500">
     <div class="item">
       <p class="title">Tygodni</p>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TeamService } from '../../common/services/team.service';
 import { Team } from '../../common/models/team.model';
 
@@ -7,7 +7,7 @@ import { Team } from '../../common/models/team.model';
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss'],
 })
-export class TeamComponent {
+export class TeamComponent implements OnInit {
   teamMembers: Team[];
 
   constructor(private dataService: TeamService) {}

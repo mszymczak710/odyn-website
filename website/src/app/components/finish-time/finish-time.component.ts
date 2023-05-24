@@ -7,6 +7,9 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class FinishTimeComponent implements AfterViewInit {
   targetDate: any = new Date('2023-06-01T13:00:00');
+  isTimeAfterPresentation: boolean =
+    this.targetDate.getTime() < new Date().getTime();
+
   timeDifference: number;
   @ViewChild('weeks', { static: true }) weeks: ElementRef;
   @ViewChild('days', { static: true }) days: ElementRef;
@@ -23,7 +26,11 @@ export class FinishTimeComponent implements AfterViewInit {
 
   calculateCountdown() {
     const now = new Date().getTime();
-    this.timeDifference = this.targetDate.getTime() - now;
+    if (!this.isTimeAfterPresentation) {
+      this.timeDifference = this.targetDate.getTime() - now;
+    } else {
+      this.timeDifference = now - this.targetDate.getTime();
+    }
   }
 
   updateCountdown() {

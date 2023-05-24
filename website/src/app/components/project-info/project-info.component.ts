@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { LicenseDialogComponent } from './license-dialog/license-dialog.component';
 import { Technologies } from '../../common/models/technologies.model';
@@ -9,7 +9,7 @@ import { TechnologiesService } from '../../common/services/technologies.service'
   templateUrl: './project-info.component.html',
   styleUrls: ['./project-info.component.scss'],
 })
-export class ProjectInfoComponent {
+export class ProjectInfoComponent implements OnInit {
   constructor(
     public dialog: MatDialog,
     private dataService: TechnologiesService

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Gallery, GalleryRef } from 'ng-gallery';
 
 @Component({
@@ -6,7 +6,7 @@ import { Gallery, GalleryRef } from 'ng-gallery';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit {
   galleryId = 'gallery';
 
   constructor(private gallery: Gallery) {}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { MeetingsService } from '../../common/services/meetings.service';
@@ -11,7 +11,7 @@ import { CustomHeader } from './custom-header/custom-header.component';
   templateUrl: './meetings.component.html',
   styleUrls: ['./meetings.component.scss'],
 })
-export class MeetingsComponent {
+export class MeetingsComponent implements OnInit {
   customHeader = CustomHeader;
   selectedDate: Date | null;
   minDate = new Date('2022/11/01');
