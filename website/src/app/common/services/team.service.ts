@@ -53,9 +53,9 @@ const TEAM_DATA: Team[] = [
     imageAlt: 'Członek zespołu',
   },
   {
-    fullname: 'Viacheslav Kushinir',
+    fullname: 'Viacheslav Kushnir',
     role1: 'Backend Developer',
-    email: 'kushinir@mat.umk.pl',
+    email: 'kushnir@mat.umk.pl',
     technologies: 'Java',
     imageSrc: './assets/images/team/Viacheslav.png',
     imageAlt: 'Członek zespołu',

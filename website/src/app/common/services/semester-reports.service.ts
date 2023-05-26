@@ -39,34 +39,34 @@ const WINTER_REPORTS_DATA: WinterSemesterReports[] = [
     description: 'Raport Jakuba',
   },
   {
-    src: './assets/reports/winter/Raport Viacheslav Kushinir.pdf',
+    src: './assets/reports/winter/Raport Viacheslav Kushnir.pdf',
     description: 'Raport Viacheslava',
   },
 ];
 
 const SUMMER_REPORTS_DATA: SummerSemesterReports[] = [
   {
-    src: '',
+    src: './assets/reports/summer/Raport Wojciech Kuźbiński.pdf',
     description: 'Raport Wojciecha',
   },
   {
-    src: '',
+    src: './assets/reports/summer/Raport Mateusz Szymczak.pdf',
     description: 'Raport Mateusza',
   },
   {
-    src: '',
+    src: './assets/reports/summer/Raport Damian Gałkowski.pdf',
     description: 'Raport Damiana',
   },
   {
-    src: '',
+    src: './assets/reports/summer/Raport Krzysztof Krzewiński.pdf',
     description: 'Raport Krzysztofa',
   },
   {
-    src: '',
+    src: './assets/reports/summer/Raport Jakub Orłowski.pdf',
     description: 'Raport Jakuba',
   },
   {
-    src: '',
+    src: './assets/reports/summer/Raport Viacheslav Kushnir.pdf',
     description: 'Raport Viacheslava',
   },
 ];

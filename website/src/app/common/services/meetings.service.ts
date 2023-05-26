@@ -247,4 +247,14 @@ const MEETINGS_DATA: Meetings[] = [
     isMeetingWithCoordinator: false,
     location: 'zdalnie',
   },
+  {
+    id: 25,
+    date: '2023-05-25',
+    startTime: '16:00',
+    finishTime: '17:00',
+    title: 'Spotkanie z opiekunem zespołu',
+    description: '(omówienie przygotowania prezentacji)',
+    isMeetingWithCoordinator: false,
+    location: 'zdalnie',
+  },
 ];

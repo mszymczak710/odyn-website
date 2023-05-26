@@ -17,10 +17,12 @@
     </mat-tab>
     <mat-tab label="Semestr letni 2022/2023">
       <div class="reports">
-        <a (click)="alertMessage()" class="item-main">
+        <a href="./assets/reports/summer/Raport Zespołu.pdf" target="_blank" rel="noreferrer" class="item-main"
+          matTooltip="Kliknij aby otworzyć raport" matTooltipPosition="below">
           <i class="fa fa-users"></i>Raport zespołu </a>
-        <ng-container *ngFor="let element of winterReports, let i = index">
-          <a (click)="alertMessage()" target="_blank" rel="noreferrer" class="item item-{{i}}">
+        <ng-container *ngFor="let element of summerReports, let i = index">
+          <a href="{{element.src}}" target="_blank" rel="noreferrer" class="item item-{{i}}"
+            matTooltip="Kliknij aby otworzyć raport" matTooltipPosition="below">
             <i class="fa fa-user"></i>{{element.description}}</a>
         </ng-container>
       </div>
