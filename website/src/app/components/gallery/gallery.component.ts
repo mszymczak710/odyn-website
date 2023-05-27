@@ -25,12 +25,27 @@ export class GalleryComponent implements OnInit {
     });
 
     galleryRef.addImage({
-      src: './assets/images/gallery/3.png',
-      thumb: './assets/images/gallery/3.png',
+      src: './assets/images/gallery/4.png',
+      thumb: './assets/images/gallery/4.png',
     });
 
     galleryRef.addYoutube({
       src: 'bSRZ9gFM8OE',
+    });
+
+    galleryRef.addImage({
+      src: './assets/images/gallery/5.png',
+      thumb: './assets/images/gallery/5.png',
+    });
+
+    galleryRef.addImage({
+      src: './assets/images/gallery/6.png',
+      thumb: './assets/images/gallery/6.png',
+    });
+
+    galleryRef.addImage({
+      src: './assets/images/gallery/3.png',
+      thumb: './assets/images/gallery/3.png',
     });
   }
 }

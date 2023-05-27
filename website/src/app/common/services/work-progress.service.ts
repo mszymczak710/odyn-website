@@ -69,8 +69,14 @@ const WORK_PROGRESS_DATA: WorkProgress[] = [
   },
   {
     date: '07.05.2023',
-    details: 'Stworzenie dokumentacji technicznej',
+    details: 'Stworzenie dokumentacji technicznej projektu',
     icon: PrimeIcons.BOOK,
+    color: '#666',
+  },
+  {
+    date: '27.05.2023',
+    details: 'Stworzenie podręcznika użytkownika',
+    icon: PrimeIcons.FILE_PDF,
     color: '#666',
   },
   {
