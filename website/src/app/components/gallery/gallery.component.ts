@@ -43,6 +43,10 @@ export class GalleryComponent implements OnInit {
       thumb: './assets/images/gallery/6.png',
     });
 
+    galleryRef.addYoutube({
+      src: 'ES4k_qr-erU',
+    });
+
     galleryRef.addImage({
       src: './assets/images/gallery/3.png',
       thumb: './assets/images/gallery/3.png',

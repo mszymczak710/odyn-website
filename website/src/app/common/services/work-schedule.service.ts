@@ -53,12 +53,12 @@ const WORK_SCHEDULE_DATA: WorkSchedule[] = [
     year: 2023,
     details:
       'Finalizacja projektu, umieszczenie pełnej dokumentacji, przygotowanie prezentacji',
-    done: 'still-working',
+    done: 'yes',
   },
   {
     month: 'Czerwiec',
     year: 2023,
     details: 'Publiczna prezentacja projektu',
-    done: 'no',
+    done: 'still-working',
   },
 ];
