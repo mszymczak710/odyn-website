@@ -4,7 +4,7 @@
 @import "variables.scss";
 @include mat.core();
 
-$frontend-primary: mat.define-palette(mat.$indigo-palette, 300);
+$frontend-primary: mat.define-palette(mat.$indigo-palette, 200);
 $frontend-accent: mat.define-palette(mat.$green-palette, 300);
 
 $frontend-warn: mat.define-palette(mat.$red-palette);

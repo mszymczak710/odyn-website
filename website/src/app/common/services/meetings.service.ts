@@ -248,7 +248,7 @@ const MEETINGS_DATA: Meetings[] = [
     location: 'zdalnie',
   },
   {
-    id: 25,
+    id: 24,
     date: '2023-05-25',
     startTime: '16:00',
     finishTime: '17:00',
@@ -256,5 +256,15 @@ const MEETINGS_DATA: Meetings[] = [
     description: '(omówienie przygotowania prezentacji)',
     isMeetingWithCoordinator: false,
     location: 'zdalnie',
+  },
+  {
+    id: 25,
+    date: '2023-05-29',
+    startTime: '17:15',
+    finishTime: '19:00',
+    title: 'Spotkanie z opiekunem zespołu',
+    description: '(przygotowanie prezentacji)',
+    isMeetingWithCoordinator: false,
+    location: 'WMiI UMK (sala L14)',
   },
 ];

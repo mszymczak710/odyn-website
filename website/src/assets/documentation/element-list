@@ -1,7 +1,8 @@
-com.example.odyn
-com.example.odyn.activities
-com.example.odyn.cam
-com.example.odyn.gps
-com.example.odyn.main_service
-com.example.odyn.main_service.types
-com.example.odyn.settings
+pl.mat.odyn
+pl.umk.mat.odyn
+pl.umk.mat.odyn.activities
+pl.umk.mat.odyn.cam
+pl.umk.mat.odyn.gps
+pl.umk.mat.odyn.main_service
+pl.umk.mat.odyn.main_service.types
+pl.umk.mat.odyn.settings
