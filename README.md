@@ -1,4 +1,4 @@
-# Odyn - strona WWW
+# OdynCam - strona WWW
 Strona projektu zespołu X na Programowanie Zespołowe w roku akademickim 2022/2023.
 
 ## Strona internetowa
